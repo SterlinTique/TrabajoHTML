@@ -1,0 +1,155 @@
+
+body {
+  font-family: Arial, sans-serif; /* siver para cambiar la fuente*/
+  max-width: 1200px; /* anchura máxima de la página */
+  margin: auto; /*centra la página */
+  padding: 20px;
+  background-color: #1c926b; /*color de fondo */
+}
+
+/*seccion del encabezado*/
+header {
+    background-color: #2a2828;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    header img {
+    width: 100%; /*ancho del elemento*/
+    height: 350px; /*altura del elemento*/
+    object-fit: cover; /*ajusta la imagen sin deformarla*/
+    margin-bottom: 20px; /*espacio entre la img y el texto que sigue*/
+    }
+    
+    header h1 {
+    color: #fff;
+    font-size: 36px; 
+    }
+    
+
+
+   /*sección de noticias*/
+  .noticias {
+    background-color: #357c96; /* Color de fondo de la sección */
+    padding: 20px;
+    border: 1px solid #ddd; /* Borde alrededor de la sección */
+    
+  }
+  
+  .noticias h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-noticias {
+    background-color: #5057b2;
+    border-radius: 10px; /*para redondear las esquinas*/
+    display: flex; /*volverlo un contenedor flexible*/
+    flex-wrap: wrap; /*ajusta los elementos a la anchura disponible*/
+    justify-content: space-around; /*distribuye los elementos con espacio igual entre ellos*/
+    gap: 5px; /*sirve para generar espacio entre cada elemento*/
+    max-width: 1200px;
+  }
+
+  .fila-noticia {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #a4d3e3; /* Color de fondo de cada noticia */
+    flex-grow: 1;
+    border-radius: 10px;
+    width: 100%; /* Anchura de cada noticia (25% menos margen) */
+    padding: 10px;
+    margin: 10px; /* Margen entre noticias */
+    
+  }
+  
+  .noticia img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /*así se espesifica que esquina se quiere redondeada*/
+  }
+  
+  .noticia h3 {
+    font-size: 18px; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Espacio entre título y texto */
+  }
+  
+  .noticia p {
+    font-size: 14px; /* Tamaño de fuente del texto */
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .noticia a {
+    align-self: flex-end; /*lo ubica en una parte inferior derecha*/
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* esto es para que aparesca una manito al dar click*/
+    text-decoration: none; /* es para quitar la linea debajo del texto*/
+  }
+  
+  .noticia a:hover {
+    background-color: #3e8e41; /*sirve para el color de fondo del enlace, cuando se pasa el mause */
+  }
+
+
+  /*seccion del perfil*/
+  .contenedor-perfil {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .perfil {
+    width: 40%;
+    margin-right: 10px; /*espacio entre imagen y descripción */
+  }
+
+  .perfil img {
+    border-radius: 10px;
+  }
+
+  .descripcion {
+    width: 60%;
+  }
+  .descripcion h3 {
+    margin-bottom: 45px; 
+  }
+
+
+
+/*seccion de redes sociales y contactos*/
+.contacto {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  
+}
+.contenedor-contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.medio-comunicacion {
+  text-align: center;
+  margin: 20px;
+}
+
+.medio-comunicacion img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.medio-comunicacion a:hover img {
+  transform: scale(1.1); /*aumenta la imagen al pasar el mause*/
+}
